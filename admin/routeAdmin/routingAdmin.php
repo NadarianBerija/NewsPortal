@@ -5,6 +5,11 @@ $path = explode('/', $host) [$num];
 
 if ($path == '' OR $path == 'index.php') {
     //главная страница
+    $response = controllerAdmin::formLoginSite();
+}
+// -----ВХОД------------------------------------
+elseif ($path == 'login') {
+    //форма входа
     $response = controllerAdmin::loginAction();
 }
 elseif ($path == 'logout') {
