@@ -17,7 +17,7 @@ class modelAdmin {
                     $item = $db->getOne($sql);
 
                     if($item != null) {
-                        $loginEmail = strtolower(($_POST['email']));
+                        $loginEmail = strtolower($_POST['email']);
                         $password = $_POST['password'];
                         if ($loginEmail == $item['email'] && password_verify($password, $item['password'])) {
                             $_SESSION['sessionId'] = session_id();
