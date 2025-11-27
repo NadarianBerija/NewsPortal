@@ -16,7 +16,7 @@
                         <h3>Register</h3>
                     </div>
                     <div class="panel-body">
-                        <form action="" class="form-horizontal" role="form" method="POST" action="registerAnswer">
+                        <form class="form-horizontal" role="form" method="POST" action="registerAnswer">
                             <div class="form-group">
                                 <label for="name" class="col-md-4 control-label">Name</label>
                                 <div class="col-md-6">
