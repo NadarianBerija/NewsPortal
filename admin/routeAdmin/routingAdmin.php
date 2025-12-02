@@ -20,6 +20,10 @@ elseif ($path == 'logout') {
 elseif($path=='newsAdmin'){
     $response = controllerAdminNews::NewsList();
 }
+//add news
+elseif($path == 'newsAddResult') {
+    $response = controllerAdminNews::newsAddResult();
+}
 else {
     //страница не существует
     $response = controllerAdmin::error404();
