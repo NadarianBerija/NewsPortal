@@ -21,6 +21,9 @@ elseif($path=='newsAdmin'){
     $response = controllerAdminNews::NewsList();
 }
 //add news
+elseif($path == 'newsAdd') {
+    $response = controllerAdminNews::newsAddForm();
+}
 elseif($path == 'newsAddResult') {
     $response = controllerAdminNews::newsAddResult();
 }
