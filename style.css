@@ -5,7 +5,7 @@ body {
   }
 h2 {
   font-family: monospace;
-  color: #606060;
+  color: white;
   
 }
 
@@ -22,9 +22,15 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+.topmenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .topmenu > li {
   display: inline-block;
-  margin-right: auto;
   position: relative;
   width: 10%;
   padding: auto;
@@ -36,7 +42,37 @@ ul {
 
 .divBox{
   width: 85%;
-  margin-left: 20px;
+  margin: auto;
+}
+
+.newsContainer{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.newsBox{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  text-align: left;
+  background-color: #023fc4;
+  border-radius: 20px;
+  border: #0e038b 5px solid;
+  padding: 15px;
+}
+
+.newsBox img{
+  display: block;
+  height: 400px;
+  width: auto;
+  object-fit: contain;
+}
+
+.newsBox a{
+  color: gold;
 }
 
 .pull-right{
@@ -44,9 +80,7 @@ ul {
   float: right;
 }
 
-/*img {
-    min-width: 30%;
-}*/
+
 
 a {
   display: block;
@@ -72,7 +106,7 @@ a {
   text-align: center;
 }
 .one ul {
-  background: #AB0000;
+  background: #0028ab;
 }
 .one ul a {
   color: white;
@@ -87,7 +121,7 @@ a {
 }
 .one .submenu {
   display: none;
-  background: #c40202;
+  background: #023fc4;
 }
 .one ul li:hover .submenu {
   display: block;

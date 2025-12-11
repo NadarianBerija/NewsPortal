@@ -2,10 +2,10 @@
 class ViewNews{
     public static function NewsByCategory($arr) {
         foreach($arr as $value) {
-            echo '<img src="data:image/jpeg;base64,'.base64_encode( $value['picture'] ).'" width=150 /><br>';
+            echo '<div class="newsBox"><img src="data:image/jpeg;base64,'.base64_encode( $value['picture'] ).'" width=150 /><br>';
             echo "<h2>".$value['title']."</h2>";
             Controller::CommentsCount($value['id']);
-            echo "<a href='news?id=".$value['id']."'>Edasi</a><br>";
+            echo "<a href='news?id=".$value['id']."'>Edasi</a><br></div>";
         }
     }
 
