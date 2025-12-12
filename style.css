@@ -2,6 +2,7 @@
 body {
   margin:0;
   font-family: Arial; 
+  background-color: #141414;
   }
 h2 {
   font-family: monospace;
@@ -41,7 +42,7 @@ ul {
 }
 
 .divBox{
-  width: 85%;
+  width: 55%;
   margin: auto;
 }
 
@@ -57,18 +58,13 @@ ul {
   display: flex;
   flex-direction: column;
   width: 45%;
-  text-align: left;
-  background-color: #023fc4;
-  border-radius: 20px;
-  border: #0e038b 5px solid;
-  padding: 15px;
 }
 
-.newsBox img{
-  display: block;
-  height: 400px;
-  width: auto;
-  object-fit: contain;
+.newsBox > img{
+  border-radius: 20px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 
 .newsBox a{
@@ -80,7 +76,11 @@ ul {
   float: right;
 }
 
-
+.readNews {
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
 
 a {
   display: block;
@@ -138,8 +138,6 @@ a {
     width: 100%;
 }
 
-
-
 section{
     padding: 2%;
     display: flex;
@@ -164,31 +162,42 @@ section{
     border: 0;
 }
 
-table{
-    border: 1px solid black;
+/* table{
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 5px;
     display: flex;
     width: auto;
     padding: 0;
   font-size: 1.2rem;
-}
+} */
 
 td{
-    border: 1px solid black;
+
     margin: 0;
     padding: 10px;
     text-align: center;
 }
 
 tr{
+    border: 1px solid #023fc4;
     padding: 0;
+    color: white;
 }
 
 th{
-    background-color: #4EBE4C;
+    color: white;
+    background-color: #023fc4;
     padding: 20px;
     margin: 0;
-    border: 1px solid black;
+}
+
+.comment{
+  width: 80%;
+  text-align: left;
+}
+
+.commentTitle{
+  text-align: left;
 }
 
 .btn{
@@ -201,15 +210,39 @@ th{
    font-weight: 600;
 }
 
+form{
+  color: white;
+}
+
+.submitBtn{
+  color: white;
+  background-color: #023fc4;
+  border-radius: 5px;
+  border: #2156c7 solid 1px;
+  padding: 5px 10px;
+}
+
+.submitBtn:hover{
+  background-color: #2156c7;
+  border: #023fc4 solid 1px;
+}
+
 p{
     word-wrap: break-word;
     display: flex;
   font-size: 1.2rem;
+  color: white;
+}
+
+hr{
+  border: grey solid 1px;
 }
 
 h1{
-    width: auto;
-    display: inline-block;
+  color: white;
+  font-weight: bold;
+  width: auto;
+  display: inline-block;
 }
 
 .courselink{
